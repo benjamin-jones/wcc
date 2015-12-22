@@ -1,0 +1,29 @@
+
+// scoping....
+
+boolean function test ( )
+
+integer x;
+integer y;
+integer z;
+integer tmp;
+
+boolean function foo(integer a) 
+begin
+foo := a < 0;
+end function;
+
+boolean function foo(integer a)   // illegal function redefinition (in same scope)....
+begin
+foo := a > 0;
+end function;
+  
+
+begin
+ x := 5;
+ y := 5;
+ z := 5;
+
+ tmp := foo(0);
+
+end function

@@ -1,0 +1,28 @@
+
+string function main ()
+  string label;
+  integer someArray[15];
+  global integer result;
+  integer function dowork(integer amount, string label) 
+    integer i;
+    string someArray[10];
+  begin
+      i := 100;
+      result := putString(label);
+      for i := i - 1 i > 0
+        if amount > 1 then
+          amount := amount / 2;
+          result := putString("Dividing amount by two for task");
+        else
+          amount := amount + i;
+          result := putString("Incrementing amount for task");
+        end if;
+        result := putInt(amount);
+      end for;
+      dowork := result;
+  end function;
+begin
+    label := "A test job\n";
+    result := dowork(10, label);
+    main := putString("You done good\n");
+end function

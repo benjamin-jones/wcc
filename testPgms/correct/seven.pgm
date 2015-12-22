@@ -1,0 +1,35 @@
+
+// parameter transmission....
+
+boolean function main()
+
+integer x;
+integer y;
+integer z;
+integer tmp;
+
+integer function foo(integer x, integer y)
+
+integer cat;
+begin
+  x := x + 4;
+  y := y - 10;
+  foo := 0;
+end function;
+
+begin
+ x := 5;
+ y := 5;
+ z := 5;
+
+ tmp := foo(z,x);
+
+ tmp := putInt(x);
+ tmp := putString("\n");
+ tmp := putInt(y);
+ tmp := putString("\n");
+ tmp := putInt(z);
+ tmp := putString("\n");
+ main := 1 < 1;
+
+end function

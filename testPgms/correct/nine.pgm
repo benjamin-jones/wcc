@@ -1,0 +1,45 @@
+
+string function main()
+
+  global integer result;
+  global string outString;
+
+  integer function dowork(integer ctl, string label) 
+    integer i;
+    string someArray[10];
+  begin
+      if ctl == 0 then
+        outString := label;
+        result := putString(outString);
+        dowork := 0;
+      end if;
+
+      if ctl == 1 then
+        outString := label;
+        result := putString(outString);
+        dowork := dowork(0,"Doing work for case 1\n");
+      end if;
+
+      if ctl == 2 then
+        outString := label;
+        result := putString(outString);
+        dowork := dowork(1,"Doing work for case 2\n");
+  
+      end if;
+    
+       	outString := label;
+      	result := putString(outString);
+      	dowork := dowork(2,"Doing work for default case\n");
+      
+      dowork := 4;
+  end function;
+begin
+  outString := "A test job\n";
+  result := putString(outString);
+  result := dowork(1, "First String\n");
+  result := putString(outString);
+  result := dowork(5, "Second String\n");
+  result := putString(outString);
+
+  main := 0;	
+end function

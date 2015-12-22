@@ -1,0 +1,15 @@
+
+integer function test()
+
+string x;
+integer tmp;
+
+begin
+
+ tmp := 5;
+
+ if x then // illegal type in conditional
+ tmp := putBool(tmp); //illegal type in function putBool
+ end if;
+
+end function

@@ -1,0 +1,16 @@
+
+// type mismatch
+
+boolean function test ()
+
+integer x;
+integer y;
+string z;
+integer tmp;
+
+begin
+
+ z := x < y;
+ x := y + z; // type mismatch
+
+end function

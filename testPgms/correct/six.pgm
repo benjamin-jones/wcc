@@ -1,0 +1,75 @@
+
+// scoping....
+
+boolean function main ( )
+
+integer x;
+integer y;
+integer z;
+integer tmp;
+
+integer function foo(integer a)
+integer x;
+integer y;
+integer tmp;
+string z;
+
+ integer function bar(integer a) 
+ integer y; 
+ integer x;
+ string z;
+ integer tmp;
+ begin
+ x := 0;
+ a := 0;
+ x := x-100;
+ y := y+450;
+ z := "\nLooking Good\n";
+
+ tmp := putInt(x);
+ tmp := putString("\n");
+ tmp := putInt(y);
+ tmp := putString(z);
+
+ bar := 0;
+ end function;
+  
+
+begin
+
+ z := "Maybe\n";
+
+ tmp := putInt(x);
+ tmp := putString("\n");
+ tmp := putInt(y);
+ tmp := putString("\n");
+ tmp := putString(z);
+
+ tmp := bar(44);
+ z := "Definitely\n";
+
+ tmp := putInt(x);
+ tmp := putString("\n");
+ tmp := putInt(y);
+ tmp := putString("\n");
+ tmp := putString(z);
+ foo := 0;
+
+end function;
+
+begin
+ x := 5;
+ y := 65000;
+ z := 1248;
+
+ tmp := foo(y);
+
+ tmp := putInt(x);
+ tmp := putString("\n");
+ tmp := putInt(y);
+ tmp := putString("\n");
+ tmp := putInt(z);
+ tmp := putString("\n");
+ main := 1 != 0;
+
+end function

@@ -1,0 +1,30 @@
+
+// scoping....
+
+integer function test ()
+
+integer x;
+integer y;
+integer z;
+integer tmp;
+
+integer function foo() 
+ string z;
+begin
+ x := 0;
+ z := 300; // in this scope z is a string
+ foo := 0;  
+end function;
+
+begin
+ x := 5;
+ y := 5;
+ z := 5;
+
+ tmp := foo(z,x); // incorrect argument list
+
+ tmp := putInt(x);
+ tmp := putInt(y);
+ tmp := putInt(z);
+
+end function

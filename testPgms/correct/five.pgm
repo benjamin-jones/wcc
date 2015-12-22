@@ -1,0 +1,30 @@
+
+// pass by value
+
+boolean function main(  )
+
+integer a[2];
+integer tmp;
+
+integer function foo(integer x, integer y) 
+
+integer cat;
+begin
+  x := x + 1;
+  y := y + 1;
+  foo := 0;
+end function;
+
+begin
+ a[0]:=5;
+ a[1]:=200;
+ tmp := putInt(a[1]);  // should output 200
+ tmp := putString("\n");
+ a[1] := foo(a[0],a[0]);
+ tmp := putInt(a[0]);  // should output the value 5
+ tmp := putString("\n");
+ tmp := putInt(a[1]);  // should output 0
+ tmp := putString("\n");
+ main := 1 != 1200;
+
+end function

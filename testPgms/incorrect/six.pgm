@@ -1,0 +1,22 @@
+
+// scoping....
+
+integer function test() 
+
+string x;
+integer y;
+integer z;
+integer tmp;
+
+begin
+
+  y := 5;
+  z := 3;
+
+  case x is // case expression must be an integer
+    when 0 then putInt(y-x/2);
+    when 1 then putInt(y-x*2);
+    default then putInt(y-x);
+  end case;
+
+end function

@@ -1,0 +1,28 @@
+
+// scoping....
+
+boolean function test (   )
+
+integer x;
+integer y;
+integer z;
+integer tmp;
+
+integer function foo() 
+
+begin
+ foo := 0;  
+end function;
+
+begin
+ x := 5;
+ y := 5;
+ z := 5;
+
+ tmp := foo(z,x); // incorrect function argument list
+
+ tmp := putInt(x);
+ tmp := putInt(y);
+ tmp := putInt(z);
+
+end function
